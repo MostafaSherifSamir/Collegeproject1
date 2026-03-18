@@ -13,24 +13,43 @@
 
 <body>
 
-<header class="nav">
+    <!-- this is the nav bar -->
+    <div class="beforeNav"></div>
+    <header class="nav">
+      <div class="header-left">
+        <button id="hamburger" class="noback-btn" onclick="appear()">≡</button>
 
-    <div class="header-left">
-        <button id="hamburger" class="general-btn noback-btn">≡</button>
-        <img class="nav-img" src="cart resources/logo.png">
-    </div>
+        <img class="nav-img" src="resources for home page/logo.png" />
+      </div>
+      <div class="header-center">
+        <input
+          type="text"
+          class="search-bar"
+          placeholder="Search products brands and categories"
+        />
+      </div>
 
-    <div class="header-center">
-        <input type="text" class="search-bar" placeholder="Search products brands and categories">
-    </div>
-
-    <div class="header-right">
+      <div class="header-right">
         <button class="general-btn">Sign in/Up</button>
         <button class="general-btn">Account</button>
         <button class="general-btn">Cart</button>
-    </div>
+      </div>
+    </header>
+    <!-- ----------------------------------------------------- -->
+    <!-- this is the modal  -->
+    <div class="modal-screen">
+      <div class="sideBar" id="sideBar">
+        <div class="menuButton">
+          <h2>Menu</h2>
+          <button onclick="disappear()">x</button>
+        </div>
 
-</header>
+        <button>Best Seller</button>
+        <button>Comparison</button>
+        <button>Orders</button>
+        <button>Categories</button>
+      </div>
+    </div>
 
 <h1>Your Cart</h1>
 
@@ -92,14 +111,37 @@
     </div>
 
 </div>
-<br><br><br><br><br><br><br><br>
-<footer id="site-footer">
 
-    <a id="support-link" href="">Support</a>
-    &nbsp;&nbsp;
-    <a id="about-link" href="">About</a>
 
-</footer>
+ <div id="main_footer">
+        <div class="footer_column">
+            <div class="foot_title">Get Help</div>
+            <ul class="foot_li">
+                <li class="foot_link">
+                    <a href="support.com">Support</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_column">
+            <div class="foot_title">Know More About Us</div>
+            <ul class="foot_li">
+                <li class="foot_link">
+                    <a href="aboutus.com">About Us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_column">
+            <div class="foot_title">Join Us</div>
+            <ul class="foot_li">
+                <li class="foot_link">
+                    <a href="Account.com">Your Account</a>
+                </li>
+                <li class="foot_link">
+                    <a href="Orders.com">Your Orders</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
 </body>
 <script src="index.js"></script>
